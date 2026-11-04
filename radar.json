@@ -1,0 +1,278 @@
+{
+  "updated": "2026-11-04",
+  "next": "2026-11-15",
+  "funding": [
+    {
+      "name": "HG 486/2026 – industria prelucrătoare",
+      "region": "RO",
+      "type_ro": "Ajutor de stat (grant sau credit fiscal)",
+      "type_en": "State aid (grant or tax credit)",
+      "what_ro": "Investiții inițiale de minimum 10 mil. € în produse cu deficit comercial. Sesiune de 759 mil. lei dintr-un program total de 5,3 mld. lei.",
+      "what_en": "Initial investments of at least €10M in products with a trade deficit. A 759M lei session within a 5.3B lei programme.",
+      "status_ro": "Deschis 15 oct. – 25 nov. 2026",
+      "status_en": "Open 15 Oct – 25 Nov 2026",
+      "url": "https://startupcafe.ro/finantari-2026-se-deschide-sesiunea-de-ajutoare-de-759-milioane-lei-pentru-firmele-romanesti-din-industria-prelucratoare-din-15-octombrie-106311"
+    },
+    {
+      "name": "Garanția de Portofoliu BID",
+      "region": "RO",
+      "type_ro": "Garanții de stat pentru credite de investiții",
+      "type_en": "State guarantees for investment loans",
+      "what_ro": "Program de 6 mld. lei al Băncii de Investiții și Dezvoltare, accesat prin băncile partenere (BCR, BRD, Banca Transilvania, CEC, ING, UniCredit și altele).",
+      "what_en": "A 6B lei programme from the Investment and Development Bank, accessed through partner banks (BCR, BRD, Banca Transilvania, CEC, ING, UniCredit and others).",
+      "status_ro": "Activ în 2026",
+      "status_en": "Active in 2026",
+      "url": "https://www.capital.ro/banca-de-investitii-si-dezvoltare-lanseaza-un-program-de-6-miliarde-de-lei-pentru-imm-uri-nazare-injectam-capital-acolo-unde-poate-genera-crestere.html"
+    },
+    {
+      "name": "Fondul pentru Modernizare – Programul cheie 7",
+      "region": "RO",
+      "type_ro": "Granturi pentru eficiență energetică industrială",
+      "type_en": "Grants for industrial energy efficiency",
+      "what_ro": "Modernizarea instalațiilor din schema EU ETS la nivel BAT. În august 2026 au fost aprobate 7 proiecte, cu 109 mil. € ajutor pentru investiții de circa 290 mil. €.",
+      "what_en": "Upgrading EU ETS installations to best-available-technology level. In August 2026, 7 projects were approved with €109M in aid for about €290M of investment.",
+      "status_ro": "Runda 2026 evaluată; urmăriți apelurile noi",
+      "status_en": "2026 round awarded; watch for new calls",
+      "url": "https://www.romania-insider.com/business/grants-industrial-energy-efficiency-aug-2026"
+    },
+    {
+      "name": "Granturile SEE și Norvegiene 2021–2028",
+      "region": "RO",
+      "type_ro": "Granturi pentru tranziție verde și inovare",
+      "type_en": "Grants for green transition and innovation",
+      "what_ro": "Peste 596 mil. € pentru România, în nouă programe, printre care tranziția verde, acțiunea climatică și inovarea. Memorandumul a fost semnat în mai 2026.",
+      "what_en": "Over €596M for Romania across nine programmes, including green transition, climate action and innovation. The memorandum was signed in May 2026.",
+      "status_ro": "Apelurile urmează să fie lansate",
+      "status_en": "Calls still to be launched",
+      "url": "https://spotmedia.ro/stiri/economie/romania-va-primi-aproape-600-de-milioane-de-euro-din-granturile-see-si-norvegiene-ce-programe-vor-primi-finantare"
+    },
+    {
+      "name": "EIC Accelerator",
+      "region": "EU",
+      "type_ro": "Grant + equity pentru deep tech",
+      "type_en": "Grant + equity for deep tech",
+      "what_ro": "Granturi de până la 2,5 mil. € plus investiții de 0,5–10 mil. €. Buget 2026 de circa 634 mil. €, cu evaluări la fiecare două luni.",
+      "what_en": "Grants of up to €2.5M plus investments of €0.5–10M. A 2026 budget of about €634M, with evaluations every two months.",
+      "status_ro": "Ultimul termen din 2026: 4 nov.",
+      "status_en": "Last 2026 cut-off: 4 Nov",
+      "url": "https://www.hezelburcht.com/en/news/eic-launches-2026-work-programme-an-overview-of-the-eic-instruments-for-2026/"
+    },
+    {
+      "name": "EIC STEP Scale-Up",
+      "region": "EU",
+      "type_ro": "Equity pentru scale-up-uri",
+      "type_en": "Equity for scale-ups",
+      "what_ro": "Investiții de 10–30 mil. € în companii deep tech care strâng runde de peste 50 mil. €. Circa 300 mil. € disponibili în 2026.",
+      "what_en": "Investments of €10–30M in deep tech companies raising rounds of €50M or more. About €300M available in 2026.",
+      "status_ro": "Termen: 25 nov. 2026",
+      "status_en": "Deadline: 25 Nov 2026",
+      "url": "https://www.hezelburcht.com/en/news/eic-launches-2026-work-programme-an-overview-of-the-eic-instruments-for-2026/"
+    },
+    {
+      "name": "Innovation Fund – IF26 Heat Auction",
+      "region": "EU",
+      "type_ro": "Licitație pentru decarbonizarea căldurii industriale",
+      "type_en": "Auction for industrial heat decarbonisation",
+      "what_ro": "1 mld. € pentru proiecte de căldură industrială peste 80°C: pompe de căldură, stocare termică, cazane electrice, solar termic, geotermal. Pilot pentru viitoarea Industrial Decarbonisation Bank.",
+      "what_en": "€1B for industrial heat projects above 80°C: heat pumps, thermal storage, electric boilers, solar thermal, geothermal. A pilot for the future Industrial Decarbonisation Bank.",
+      "status_ro": "Se deschide la începutul lui dec. 2026",
+      "status_en": "Opens early December 2026",
+      "url": "https://climate.ec.europa.eu/news-other-reads/news/commission-publishes-terms-and-conditions-eur1-billion-industrial-heat-decarbonisation-auction-2026-09-24_en"
+    }
+  ],
+  "players": [
+    {
+      "name": "Morphosis Capital",
+      "country": "RO",
+      "kind_ro": "Private equity pentru IMM-uri",
+      "kind_en": "SME private equity",
+      "note_ro": "Fund II de peste 100 mil. €, tichete de 10–15 mil. €, inclusiv producție de nișă.",
+      "note_en": "Fund II of €100M+, €10–15M tickets, including niche manufacturing.",
+      "url": "https://pe-insights.com/morphosis-capital-launches-e100m-fund-ii-to-boost-sme-growth-in-romania/"
+    },
+    {
+      "name": "Banca de Investiții și Dezvoltare",
+      "country": "RO",
+      "kind_ro": "Bancă de dezvoltare a statului",
+      "kind_en": "State development bank",
+      "note_ro": "Garanții pentru credite de investiții, prin băncile comerciale.",
+      "note_en": "Guarantees for investment loans, through commercial banks.",
+      "url": "https://www.capital.ro/banca-de-investitii-si-dezvoltare-lanseaza-un-program-de-6-miliarde-de-lei-pentru-imm-uri-nazare-injectam-capital-acolo-unde-poate-genera-crestere.html"
+    },
+    {
+      "name": "Recovery Equity Fund of Funds (PNRR / EIF)",
+      "country": "RO",
+      "kind_ro": "Fond de fonduri",
+      "kind_en": "Fund of funds",
+      "note_ro": "347,5 mil. € alocați către 20 de fonduri de VC, PE și infrastructură active în România.",
+      "note_en": "€347.5M committed to 20 VC, PE and infrastructure funds active in Romania.",
+      "url": "https://www.romania-insider.com/romania-pnrr-venture-private-equity-funds-2026"
+    },
+    {
+      "name": "Early Game Ventures",
+      "country": "RO",
+      "kind_ro": "Venture capital, seed",
+      "kind_en": "Seed venture capital",
+      "note_ro": "Unul dintre cei mai activi investitori seed din România.",
+      "note_en": "One of Romania's most active seed investors.",
+      "url": "https://www.earlygame.vc"
+    },
+    {
+      "name": "GapMinder",
+      "country": "RO",
+      "kind_ro": "Venture capital",
+      "kind_en": "Venture capital",
+      "note_ro": "VC românesc pentru companii tech în stadii timpurii.",
+      "note_en": "Romanian VC for early-stage tech companies.",
+      "url": "https://www.gapminder.vc"
+    },
+    {
+      "name": "LAUNCHub Ventures",
+      "country": "BG · CEE",
+      "kind_ro": "Venture capital",
+      "kind_en": "Venture capital",
+      "note_ro": "Fund III cu prima închidere de 65 mil. €; România și Bulgaria sunt piețele principale.",
+      "note_en": "Fund III first close at €65M; Romania and Bulgaria are its main markets.",
+      "url": "https://www.zf.ro/business-hi-tech/fondul-investitii-launchub-bulgaria-finantat-start-up-urile-romanesti-fintechos-veridion-aggero-strans-65-mil-euro-prima-inchidere-celui-treilea-fond-romania-ramane-una-dintre-pietele-cheie-23251867"
+    },
+    {
+      "name": "Enterprise Investors",
+      "country": "PL · CEE",
+      "kind_ro": "Private equity",
+      "kind_en": "Private equity",
+      "note_ro": "Unul dintre cele mai vechi fonduri de PE din Europa Centrală și de Est.",
+      "note_en": "One of the longest-running private equity firms in Central and Eastern Europe.",
+      "url": "https://www.ei.com.pl"
+    },
+    {
+      "name": "Innova Capital",
+      "country": "PL · CEE",
+      "kind_ro": "Private equity",
+      "kind_en": "Private equity",
+      "note_ro": "PE pentru companii mijlocii din regiune, activ și în România.",
+      "note_en": "Mid-market PE in the region, also active in Romania.",
+      "url": "https://www.innovacap.com"
+    },
+    {
+      "name": "SET Ventures",
+      "country": "NL",
+      "kind_ro": "VC pentru tranziția energetică",
+      "kind_en": "Energy transition VC",
+      "note_ro": "Investește în software și tehnologii pentru sisteme energetice descentralizate.",
+      "note_en": "Invests in software and technology for decentralised energy systems.",
+      "url": "https://www.setventures.com"
+    },
+    {
+      "name": "Extantia",
+      "country": "DE",
+      "kind_ro": "VC climate tech",
+      "kind_en": "Climate tech VC",
+      "note_ro": "Fond european pentru tehnologii cu impact mare asupra emisiilor.",
+      "note_en": "European fund for technologies with a large emissions impact.",
+      "url": "https://www.extantia.com"
+    },
+    {
+      "name": "EIC Fund",
+      "country": "EU",
+      "kind_ro": "Brațul de investiții al EIC",
+      "kind_en": "EIC investment arm",
+      "note_ro": "Investiții directe de equity în companiile selectate prin EIC Accelerator.",
+      "note_en": "Direct equity investments in companies selected through the EIC Accelerator.",
+      "url": "https://eic.ec.europa.eu"
+    }
+  ],
+  "news": [
+    {
+      "date": "2026-10-27",
+      "title_ro": "VC în Europa Centrală și de Est: 632 mil. € în T3 2026",
+      "title_en": "CEE venture capital: €632M in Q3 2026",
+      "summary_ro": "Creștere de 28% față de T2. România a atras 55,2 mil. €, în mare parte prin FintechOS și Veridion.",
+      "summary_en": "Up 28% on Q2. Romania attracted €55.2M, mostly through FintechOS and Veridion.",
+      "source": "Vestbee",
+      "url": "https://www.vestbee.com/insights/articles/vc-funding-in-cee-report-q3-2026"
+    },
+    {
+      "date": "2026-10-02",
+      "title_ro": "LAUNCHub strânge 65 mil. € pentru al treilea fond",
+      "title_en": "LAUNCHub raises €65M for its third fund",
+      "summary_ro": "Printre investitori: EIF, EBRD și 15 mil. € din PNRR-ul României. Tichete inițiale de 0,3–3 mil. €.",
+      "summary_en": "Backers include the EIF, the EBRD and €15M from Romania's recovery plan. Initial tickets of €0.3–3M.",
+      "source": "Ziarul Financiar",
+      "url": "https://www.zf.ro/business-hi-tech/fondul-investitii-launchub-bulgaria-finantat-start-up-urile-romanesti-fintechos-veridion-aggero-strans-65-mil-euro-prima-inchidere-celui-treilea-fond-romania-ramane-una-dintre-pietele-cheie-23251867"
+    },
+    {
+      "date": "2026-09-24",
+      "title_ro": "Comisia Europeană pregătește o licitație de 1 mld. € pentru căldură industrială",
+      "title_en": "European Commission sets up a €1B industrial heat auction",
+      "summary_ro": "Pragul coboară la 80°C, iar licitația funcționează ca pilot pentru Industrial Decarbonisation Bank.",
+      "summary_en": "The threshold drops to 80°C, and the auction serves as a pilot for the Industrial Decarbonisation Bank.",
+      "source": "Comisia Europeană",
+      "url": "https://climate.ec.europa.eu/news-other-reads/news/commission-publishes-terms-and-conditions-eur1-billion-industrial-heat-decarbonisation-auction-2026-09-24_en"
+    },
+    {
+      "date": "2026-09-03",
+      "title_ro": "759 mil. lei pentru fabrici noi în industria prelucrătoare",
+      "title_en": "759M lei for new manufacturing plants",
+      "summary_ro": "Sesiunea din schema HG 486/2026 e deschisă între 15 octombrie și 25 noiembrie, pentru investiții de minimum 10 mil. €.",
+      "summary_en": "The HG 486/2026 session runs from 15 October to 25 November, for investments of at least €10M.",
+      "source": "StartupCafe",
+      "url": "https://startupcafe.ro/finantari-2026-se-deschide-sesiunea-de-ajutoare-de-759-milioane-lei-pentru-firmele-romanesti-din-industria-prelucratoare-din-15-octombrie-106311"
+    },
+    {
+      "date": "2026-08-28",
+      "title_ro": "109 mil. € pentru eficiența energetică a industriei",
+      "title_en": "€109M for industrial energy efficiency",
+      "summary_ro": "Șapte proiecte din Fondul pentru Modernizare, pentru investiții totale de circa 290 mil. €.",
+      "summary_en": "Seven Modernisation Fund projects, for total investment of about €290M.",
+      "source": "Romania Insider",
+      "url": "https://www.romania-insider.com/business/grants-industrial-energy-efficiency-aug-2026"
+    },
+    {
+      "date": "2026-08-12",
+      "title_ro": "PNRR: 347,5 mil. € pentru 20 de fonduri de VC și PE",
+      "title_en": "Recovery plan: €347.5M for 20 VC and PE funds",
+      "summary_ro": "Plus primul exit dintr-o companie finanțată prin PNRR: Morphosis II a vândut La Cocoș la de peste trei ori investiția.",
+      "summary_en": "Plus the first exit from a company backed by recovery funds: Morphosis II sold La Cocoș at over three times its investment.",
+      "source": "Romania Insider",
+      "url": "https://www.romania-insider.com/romania-pnrr-venture-private-equity-funds-2026"
+    }
+  ],
+  "zebras": [
+    {
+      "date": "2026-10-05",
+      "name": "TOPANEL",
+      "country": "RO",
+      "note_ro": "Producătorul de panouri termoizolante estimează afaceri de circa 370 mil. lei în 2026, după o creștere de 20% în 2025. Exporturile aduc circa 35% din venituri, iar compania studiază o fabrică nouă în vestul țării.",
+      "note_en": "The insulated panel maker expects revenue of about 370M lei in 2026, after 20% growth in 2025. Exports bring in about 35% of revenue, and the company is studying a new plant in western Romania.",
+      "source": "Agenda Construcțiilor",
+      "url": "https://agendaconstructiilor.ro/stiri/hale-structuri-metalice/topanel-afaceri-de-370-mil-lei-in-2026-si-planuri-pentru-o-fabrica-in-vestul-tarii"
+    },
+    {
+      "date": "2026-08-27",
+      "name": "Simtel Team",
+      "country": "RO",
+      "note_ro": "Grupul de inginerie pentru energie solară și stocare și-a crescut veniturile cu 84% în S1 2026, la 354 mil. lei, și s-a extins în Germania, Suedia și Italia. Marjele au scăzut, pe fondul decalării unor proiecte mari.",
+      "note_en": "The solar and storage engineering group grew revenue 84% in H1 2026 to 354M lei and expanded into Germany, Sweden and Italy. Margins fell as some large projects shifted to later periods.",
+      "source": "Revista Biz",
+      "url": "https://www.revistabiz.ro/simtel-a-avut-venituri-din-exploatare-in-crestere-cu-84-in-primele-sase-luni-din-2026/"
+    },
+    {
+      "date": "2026-07-30",
+      "name": "KONČAR",
+      "country": "HR",
+      "note_ro": "Producătorul croat de echipamente pentru rețele electrice a semnat peste 1 mld. € în contracte noi în S1 2026 și are un portofoliu record de 2,9 mld. €. Exportul reprezintă 71% din vânzări.",
+      "note_en": "The Croatian grid equipment maker signed over €1B in new contracts in H1 2026 and holds a record €2.9B backlog. Exports make up 71% of sales.",
+      "source": "KONČAR",
+      "url": "https://koncar.hr/en/news/koncar-secures-more-eur-1-billion-new-orders-first-half-year"
+    },
+    {
+      "date": "2026-05-28",
+      "name": "Electro-Alfa International",
+      "country": "RO",
+      "note_ro": "Producătorul din Botoșani de echipamente electrice de medie și joasă tensiune și soluții de eficiență energetică a crescut cu 12% în T1 2026, la 135 mil. lei, cu profit net în creștere. Exportul aduce 26% din venituri.",
+      "note_en": "The Botoșani maker of medium and low voltage electrical equipment and energy efficiency solutions grew 12% in Q1 2026 to 135M lei, with net profit up. Exports bring in 26% of revenue.",
+      "source": "Electro-Alfa",
+      "url": "https://electroalfa.ro/news/electro-alfa-international-reports-revenue-growth-in-q1-2026/"
+    }
+  ]
+}

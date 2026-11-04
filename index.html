@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Zebra Capital & Advisory: operatori și advisori pentru companii din industrie, energie și tehnologii verzi din România și CEE.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px/1.4 system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Zebra Capital &amp; Advisory</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Identity: zebra contrast (ink on paper, one inverted band), a three-stripe Z mark, stripe rules with varying rhythm between sections, and a unique stripe signature per partner. */
+:root{
+  --bg:#f6f7f5; --surface:#ffffff; --ink:#121614; --muted:#5a635e; --line:#d9ded9;
+  --accent:#0f6b55; --accent-soft:#e3efe9; --stripe:#121614;
+  --inv-bg:#121614; --inv-fg:#f2f4f1; --inv-muted:#a9b3ad; --inv-accent:#5cc7a4; --inv-line:#2f3833;
+  --display:"Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1311; --surface:#161b18; --ink:#e9ede9; --muted:#9aa49e; --line:#2a322e;
+  --accent:#5cc7a4; --accent-soft:#17302a; --stripe:#e9ede9;
+  --inv-bg:#e9ede9; --inv-fg:#0f1311; --inv-muted:#4d5650; --inv-accent:#0f6b55; --inv-line:#c9d0cb; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1311; --surface:#161b18; --ink:#e9ede9; --muted:#9aa49e; --line:#2a322e;
+  --accent:#5cc7a4; --accent-soft:#17302a; --stripe:#e9ede9;
+  --inv-bg:#e9ede9; --inv-fg:#0f1311; --inv-muted:#4d5650; --inv-accent:#0f6b55; --inv-line:#c9d0cb; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6}
+#site[data-lang="ro"] [lang="en"], #site[data-lang="en"] [lang="ro"]{display:none}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+
+header.top{border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px}
+.brand{font-family:var(--display);font-size:1.45rem;letter-spacing:.01em}
+.brand b{font-weight:400;font-style:italic}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px}
+.langs button{font:500 .78rem/1 var(--mono);letter-spacing:.08em;border:0;background:none;color:var(--muted);padding:7px 12px;border-radius:999px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.langs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.hero .wrap{padding-block:64px 48px;display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:48px;align-items:end}
+.eyebrow{font:500 .75rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.6rem,6vw,4.9rem);line-height:1;letter-spacing:-.01em;margin:14px 0 0;text-wrap:balance}
+h1 em{color:var(--accent)}
+.hero p{color:var(--muted);margin:0;max-width:44ch}
+.stripes{height:22px;background:repeating-linear-gradient(105deg,var(--stripe) 0 14px,transparent 14px 30px)}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{width:30px;height:30px;flex:none;color:var(--ink)}
+.rule{height:10px;margin-block:8px;background:repeating-linear-gradient(var(--a,105deg),var(--stripe) 0 var(--w,6px),transparent var(--w,6px) var(--g,16px));-webkit-mask:linear-gradient(90deg,#000 0,#000 var(--fade,55%),transparent);mask:linear-gradient(90deg,#000 0,#000 var(--fade,55%),transparent)}
+.inverse{background:var(--inv-bg);color:var(--inv-fg)}
+.inverse .eyebrow{color:var(--inv-accent)}
+.inverse .why-text p{color:var(--inv-muted)}
+.inverse .src{color:var(--inv-accent)}
+.inverse .src:focus-visible{outline-color:var(--inv-accent)}
+.why{padding-block:72px}
+.why .mark{width:clamp(72px,9vw,112px);height:auto;margin-top:28px;color:var(--inv-fg)}
+.why .mark path:nth-child(2){fill:var(--inv-accent)}
+.herd{display:block;width:100%;height:56px;margin:-6px 0 22px;overflow:visible}
+.herd path{fill:none;stroke-width:2;vector-effect:non-scaling-stroke}
+.herd .h1{stroke:var(--ink)} .herd .h2{stroke:var(--muted)} .herd .h3{stroke:var(--accent)}
+.herd-cap{margin:-8px 0 26px;color:var(--muted);max-width:60ch}
+.intro > div:first-child{display:grid;grid-template-columns:96px minmax(0,1fr);column-gap:20px;align-items:center}
+.intro > div:first-child .avatar{grid-row:span 2}
+.avatar{position:relative;width:96px;height:96px}
+.avatar img{width:96px;height:96px;border-radius:6px;object-fit:cover;display:block;background:var(--line)}
+.sig{position:absolute;right:-8px;bottom:-8px;width:34px;height:34px;border-radius:5px;display:block;background:var(--surface);box-shadow:0 0 0 3px var(--surface)}
+
+section{padding-block:56px}
+.why .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:48px;align-items:start}
+.why blockquote{margin:14px 0 0;font-family:var(--display);font-style:italic;font-size:clamp(2rem,4vw,3rem);line-height:1.08;text-wrap:balance}
+.why-text{display:flex;flex-direction:column;gap:14px;max-width:62ch}
+.why-text p{margin:0;color:var(--muted)}
+.src{color:var(--accent);font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;align-self:flex-start}
+.src:hover{border-bottom-width:2px}
+.src:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(1.8rem,3.4vw,2.5rem);line-height:1.1;margin:8px 0 28px;text-wrap:balance}
+
+.offer{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.offer div{padding:22px 22px 6px 0;border-right:1px solid var(--line);min-width:0}
+.offer div+div{padding-left:22px}
+.offer div:last-child{border-right:0}
+.offer h3{font:600 1rem/1.3 var(--body);margin:0 0 6px}
+.offer h3 span.z{font-family:var(--display);font-style:italic;font-weight:400;font-size:1.25rem;margin-right:4px}
+.offer p{margin:0;color:var(--muted);font-size:.95rem}
+
+.team{display:flex;flex-direction:column;gap:20px}
+.person{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:32px;min-width:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.35fr);gap:44px;align-items:start}
+.intro{display:flex;flex-direction:column;gap:18px;min-width:0}
+.intro > p{margin:0;color:var(--muted)}
+.person h3{font-family:var(--display);font-weight:400;font-size:1.9rem;line-height:1.1;margin:0}
+.role{font:500 .74rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+.person > p{margin:0;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.tags li{font-size:.8rem;background:var(--accent-soft);color:var(--ink);padding:4px 10px;border-radius:999px}
+.ledger{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.ledger li{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+.ledger time{font:400 .78rem/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.ledger strong{display:block;font-weight:600}
+.ledger span.d{display:block;color:var(--muted);font-size:.92rem}
+.sub{font:500 .72rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.net{display:flex;flex-direction:column;gap:8px}
+.net ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.net li{font-size:.92rem;color:var(--muted);padding-left:12px;border-left:2px solid var(--accent)}
+.net li strong{display:block;color:var(--ink);font-weight:600;font-size:.85rem}
+
+.needs{display:flex;flex-direction:column;border-top:1px solid var(--ink)}
+.needs div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr) 11rem;gap:24px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.needs div > *{min-width:0}
+.needs h3{font-family:var(--display);font-weight:400;font-size:1.45rem;line-height:1.15;margin:0;text-wrap:balance}
+.needs p{margin:0;color:var(--muted);font-size:.95rem}
+.needs .to{text-align:right;font:500 .74rem/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
+.radar{margin-top:8px}
+.radar-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 32px}
+.radar-head h2{margin-bottom:10px}
+.lede{margin:0;color:var(--muted);max-width:60ch}
+.stamp{font:400 .76rem/1.6 var(--mono);color:var(--muted);text-align:left;font-variant-numeric:tabular-nums}
+.stamp b{color:var(--ink);font-weight:500}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:28px 0 0;border-bottom:1px solid var(--ink);padding-bottom:10px}
+.tabs button{font:500 .85rem/1 var(--body);border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:9px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.radar-body{display:flex;flex-direction:column}
+.r-item{display:grid;grid-template-columns:9rem minmax(0,1fr) minmax(0,14rem);gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.r-item > *{min-width:0}
+.r-meta{font:400 .76rem/1.6 var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.r-item h3{font:600 1rem/1.35 var(--body);margin:0 0 4px}
+.r-item h3 a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line)}
+.r-item h3 a:hover{border-bottom-color:var(--accent)}
+.r-item h3 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.r-item p{margin:0;color:var(--muted);font-size:.93rem}
+.r-kind{font-size:.85rem;color:var(--muted);margin-bottom:6px}
+.r-status{display:inline-block;font:500 .74rem/1.4 var(--mono);letter-spacing:.04em;color:var(--accent);background:var(--accent-soft);padding:4px 9px;border-radius:4px}
+.empty{color:var(--muted);padding:22px 0;margin:0}
+.disclaimer{margin:16px 0 0;font-size:.82rem;color:var(--muted)}
+.cases-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px}
+.case-nav{display:flex;gap:8px;margin-bottom:28px}
+.case-nav button{width:44px;height:44px;border-radius:999px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font-size:1.1rem;cursor:pointer}
+.case-nav button:hover:not(:disabled){background:var(--ink);color:var(--bg)}
+.case-nav button:disabled{opacity:.3;cursor:default}
+.case-nav button:focus-visible,.case-track:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.case-track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,calc((100% - 40px)/3));gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:12px;scrollbar-width:thin}
+.case{scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.case-top{display:flex;justify-content:space-between;align-items:center}
+.case-tag{font:500 .72rem/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.case-n{font:400 .75rem/1 var(--mono);color:var(--muted)}
+.case h3{font-family:var(--display);font-weight:400;font-size:1.5rem;line-height:1.12;margin:0;text-wrap:balance}
+.case-ctx{margin:0;color:var(--muted);font-size:.93rem}
+.case ul{margin:0;padding-left:18px;font-size:.9rem;display:flex;flex-direction:column;gap:4px}
+.case-res{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;align-items:baseline;gap:10px}
+.case-res b{font-family:var(--display);font-weight:400;font-size:2.2rem;line-height:1;font-variant-numeric:tabular-nums}
+.case-res span{color:var(--muted);font-size:.85rem}
+.case-who{font:400 .74rem/1.4 var(--mono);color:var(--muted)}
+@media (max-width:1060px){.case-track{grid-auto-columns:minmax(280px,calc((100% - 20px)/2))}}
+@media (max-width:640px){.case-track{grid-auto-columns:86%}}
+@media (prefers-reduced-motion:reduce){.case-track{scroll-behavior:auto}}
+.inv .lede{margin-bottom:28px}
+.inv-sub{margin-bottom:12px}
+.inv-steps{list-style:none;margin:0 0 36px;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--ink)}
+.inv-steps li{padding:18px 22px 18px 0;border-bottom:1px solid var(--line);min-width:0;display:flex;flex-direction:column;gap:6px}
+.inv-steps li:not(:nth-child(3n+1)){padding-left:22px;border-left:1px solid var(--line)}
+.inv-n{font:400 .74rem/1 var(--mono);color:var(--accent)}
+.inv-steps h3,.inv-formats h3{font:600 1rem/1.3 var(--body);margin:0}
+.inv-steps p,.inv-formats p{margin:0;color:var(--muted);font-size:.92rem}
+.inv-grid{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:32px;align-items:start}
+.inv-formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.inv-formats div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.inv-report{margin:16px 0 0;color:var(--muted);font-size:.92rem;max-width:70ch}
+.inv-market{background:var(--accent-soft);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.inv-market b{font-family:var(--display);font-weight:400;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.inv-market p{margin:0;font-size:.93rem}
+.contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:32px;align-items:end}
+.contact{padding-block:64px;margin-top:24px}
+.contact h2{margin-bottom:0;font-size:clamp(2.2rem,4.5vw,3.4rem)}
+.contact-body p{margin:0;color:var(--inv-muted)}
+.mail-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;margin:18px 0}
+.mail{font-family:var(--display);font-size:clamp(1.4rem,3vw,2rem);color:var(--inv-fg);text-decoration:none;border-bottom:1px solid var(--inv-accent);word-break:break-all;user-select:all}
+.mail:focus-visible,.copy:focus-visible{outline:2px solid var(--inv-accent);outline-offset:3px}
+.copy{font:500 .8rem/1 var(--body);background:transparent;color:var(--inv-fg);border:1px solid var(--inv-muted);border-radius:999px;padding:9px 14px;cursor:pointer}
+.copy:hover{border-color:var(--inv-fg)}
+.copy-ok{font:400 .78rem/1 var(--mono);color:var(--inv-accent)}
+.contact-note{font:400 .78rem/1.4 var(--mono)}
+@media (max-width:900px){.inv-grid{grid-template-columns:1fr}.inv-formats{grid-template-columns:1fr}.inv-steps{grid-template-columns:1fr}.inv-steps li:not(:nth-child(3n+1)){padding-left:0;border-left:0}.contact .wrap{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line)}
+footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--muted);font-size:.85rem}
+
+@media (max-width:900px){
+  .person{grid-template-columns:1fr;gap:22px}
+  .why .wrap{grid-template-columns:1fr;gap:18px}
+}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr;gap:20px;padding-block:44px 32px}
+  .team{grid-template-columns:1fr}
+  .offer{grid-template-columns:1fr}
+  .needs div{grid-template-columns:1fr;gap:6px}
+  .r-item{grid-template-columns:1fr;gap:6px}
+  .stamp{text-align:left}
+  .needs .to{text-align:left}
+  .offer div,.offer div+div{padding:18px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .person{padding:22px}
+  .ledger li{grid-template-columns:1fr;gap:2px}
+}
+</style>
+
+<div id="site" data-lang="ro">
+<header class="top"><div class="wrap">
+  <div class="brand"><svg class="logo" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 6h30v6H5z" fill="currentColor"/><path d="M35 12 13 28H5l22-16z" fill="var(--accent)"/><path d="M5 28h30v6H5z" fill="currentColor"/></svg><span>Zebra <b>Capital &amp; Advisory</b></span></div>
+  <div class="langs" role="group" aria-label="Language">
+    <button type="button" id="btn-ro" data-set="ro" aria-pressed="true">RO</button>
+    <button type="button" id="btn-en" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow"><span lang="ro">Operatori &amp; advisori · Industrie, energie &amp; tehnologii verzi</span><span lang="en">Operators &amp; advisors · Cleantech &amp; industry</span></div>
+    <h1><span lang="ro">Strategie, plus <em>execuție operațională</em> reală.</span><span lang="en">Strategy, backed by <em>real operational execution</em>.</span></h1>
+  </div>
+  <p><span lang="ro">Lucrăm alături de fondatori, echipele de conducere și investitorii lor, cu perspectiva unui operator: construim împreună structura pentru următoarea etapă a afacerii și rămânem alături de ei în implementare, de la produs și capacitate de producție la lanțuri de aprovizionare, finanțare, tranzacții de M&amp;A și integrarea de după. Aducem acces la parteneri și investitori din România, Scandinavia, Olanda și Marea Britanie și la furnizori din toată Europa.</span><span lang="en">We work alongside founders, leadership teams and their investors with an operator's perspective: together we build the structure for the business's next stage and stay alongside them through implementation, from product and production capacity to supply chains, financing, M&amp;A and post-merger integration. We bring access to partners and investors in Romania, Scandinavia, the Netherlands and the UK, and to suppliers across Europe.</span></p>
+</div></div>
+<div class="stripes" aria-hidden="true"></div>
+
+<section class="why inverse"><div class="wrap">
+  <div>
+    <div class="eyebrow"><span lang="ro">De ce Zebra</span><span lang="en">Why Zebra</span></div>
+    <blockquote><span lang="ro">Nu orice afacere trebuie să fie un unicorn.</span><span lang="en">Not every business needs to be a unicorn.</span></blockquote>
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 6h30v6H5z" fill="currentColor"/><path d="M35 12 13 28H5l22-16z"/><path d="M5 28h30v6H5z" fill="currentColor"/></svg>
+  </div>
+  <div class="why-text">
+    <p><span lang="ro">Unicornii sunt startup-urile evaluate la peste un miliard de dolari, construite pentru creștere cu orice preț. Zebrele sunt altceva. Dungile lor îmbină două lucruri considerate adesea incompatibile: profitul și impactul pozitiv asupra comunității. Iar, ca zebrele din natură, sunt rezistente și se mișcă în grup: cresc pe baza fluxului de numerar, a clienților și a colaborării pe termen lung. Termenul vine din mișcarea internațională Zebras Unite, lansată în 2017.</span><span lang="en">Unicorns are startups valued at over a billion dollars and built for growth at any cost. Zebras are different. Their stripes combine two things often seen as incompatible: profit and a positive impact on the community. And like zebras in the wild, they are resilient and move in herds, growing on cash flow, customers and long-term collaboration. The term comes from the international Zebras Unite movement, launched in 2017.</span></p>
+    <p><span lang="ro">Majoritatea companiilor industriale și de tehnologie din România sunt zebre. Cu ele lucrăm: afaceri reale, care vor să crească solid, nu doar repede.</span><span lang="en">Most industrial and technology companies in Romania are zebras. They are the ones we work with: real businesses that want to grow soundly, not just fast.</span></p>
+    <a class="src" href="https://medium.com/zebras-unite/zebrasfix-c467e55f9d96" target="_blank" rel="noopener"><span lang="ro">Citește manifestul „Zebras Fix What Unicorns Break”</span><span lang="en">Read the manifesto “Zebras Fix What Unicorns Break”</span> ↗</a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow"><span lang="ro">Nevoile pieței</span><span lang="en">What the market needs</span></div>
+  <h2><span lang="ro">Companiile din industrie, energie și tehnologii verzi din România se confruntă cu o serie de provocări recurente</span><span lang="en">Industrial and cleantech companies in Romania face a set of recurring challenges</span></h2>
+  <div class="needs">
+    <div><h3><span lang="ro">Finanțare greu de structurat</span><span lang="en">Financing that is hard to structure</span></h3><p><span lang="ro">Capacitatea nouă și produsele noi cer capital, iar combinarea granturilor, a creditelor bancare și a equity-ului cere experiență pe care puține echipe o au intern.</span><span lang="en">New capacity and new products need capital, and combining grants, bank debt and equity takes experience few teams have in-house.</span></p><span class="to">→ Zebra Growth</span></div>
+    <div><h3><span lang="ro">De la prototip la producție</span><span lang="en">From prototype to production</span></h3><p><span lang="ro">Tehnologiile noi se blochează des la industrializare: furnizori, linii de producție, planificare și livrare la volum.</span><span lang="en">New technologies often stall at industrialisation: suppliers, production lines, planning and delivery at volume.</span></p><span class="to">→ Zebra Growth</span></div>
+    <div><h3><span lang="ro">Acces la piețe europene</span><span lang="en">Access to European markets</span></h3><p><span lang="ro">Multe companii românești au produse competitive, dar le lipsesc rețelele, standardele și modul de lucru european de care au nevoie ca să vândă și să crească în afara țării.</span><span lang="en">Many Romanian companies have competitive products but lack the networks, standards and European way of working they need to sell and grow beyond Romania.</span></p><span class="to">→ Zebra Growth</span></div>
+    <div><h3><span lang="ro">Presiune pe operațiuni</span><span lang="en">Pressure on operations</span></h3><p><span lang="ro">Costurile cu energia, cerințele de decarbonizare și lanțurile de aprovizionare mutate înapoi în Europa forțează multe companii să se restructureze și să-și refacă procesele.</span><span lang="en">Energy costs, decarbonisation requirements and supply chains moving back to Europe are pushing many companies to restructure and rebuild their processes.</span></p><span class="to">→ Zebra Transition</span></div>
+    <div><h3><span lang="ro">Tehnologie modernă nefolosită</span><span lang="en">Modern technology left unused</span></h3><p><span lang="ro">Multe companii lucrează încă cu procese manuale și date împrăștiate. Digitalizarea, automatizarea și AI pot optimiza operațiunile și pot deveni coloana vertebrală a afacerii, dar rareori există cineva care să le implementeze cap-coadă.</span><span lang="en">Many companies still run on manual processes and scattered data. Digitalisation, automation and AI can optimise operations and become the backbone of the business, but there is rarely anyone to implement them end to end.</span></p><span class="to">→ Zebra Growth · Transition</span></div>
+    <div><h3><span lang="ro">Fondatori fără succesor</span><span lang="en">Founders without a successor</span></h3><p><span lang="ro">Mulți antreprenori care și-au fondat firmele după 1990 se apropie de pensionare fără un succesor clar în familie sau în echipă.</span><span lang="en">Many entrepreneurs who founded their companies after 1990 are nearing retirement with no clear successor in the family or the team.</span></p><span class="to">→ Zebra Acquisition</span></div>
+  </div>
+</div></section>
+
+<div class="wrap" aria-hidden="true"><div class="rule" style="--a:100deg;--w:4px;--g:11px;--fade:40%"></div></div>
+<section style="padding-top:8px"><div class="wrap">
+  <div class="eyebrow"><span lang="ro">Ce oferim</span><span lang="en">What we offer</span></div>
+  <h2><span lang="ro">Trei trepte, după etapa în care se află afacerea</span><span lang="en">Three steps, matched to where the business is</span></h2>
+  <div class="offer">
+    <div><h3><span class="z">Zebra</span> Growth</h3><p><span lang="ro">Pentru companii care au deja produse și clienți și vor să crească mai repede și dincolo de România. Advisory pentru scalare internațională: acces la piețe europene, parteneri și standarde, creșterea capacității de producție, lanțuri de aprovizionare, tehnologii digitale și AI pentru dezvoltarea produselor și a vânzărilor, plus structurarea finanțării. Ne putem alătura companiei ca partener, cu un proiect de creștere condus cap-coadă.</span><span lang="en">For companies that already have products and customers and want to grow faster and beyond Romania. Advisory for international scaling: access to European markets, partners and standards, production capacity, supply chains, digital technology and AI for product development and sales, plus structuring the financing. We can join the company as a partner and run the growth project end to end.</span></p></div>
+    <div><h3><span class="z">Zebra</span> Transition</h3><p><span lang="ro">Pentru companii care trebuie să se reorganizeze sau să treacă la următorul nivel: restructurare și turnaround, guvernanță și relația cu creditorii și investitorii, reconstruirea coloanei operaționale cu date, automatizare și instrumente AI ca fundament, plus pregătirea tranzacțiilor de M&amp;A și integrarea de după. Rămânem alături de echipa de conducere până când noile procese funcționează.</span><span lang="en">For companies that need to reorganise or move to the next level: restructuring and turnaround, governance and relationships with lenders and investors, rebuilding the operational backbone with data, automation and AI tools as its foundation, plus preparing M&amp;A transactions and post-merger integration. We stay alongside the leadership team until the new processes work.</span></p></div>
+    <div><h3><span class="z">Zebra</span> Acquisition</h3><p><span lang="ro">Pentru fondatori care își caută un succesor: preluăm și operăm IMM-uri industriale din România, cu o tranziție treptată care păstrează echipa, clienții și know-how-ul. Structurăm tranzacția împreună cu fondatorul, inclusiv prin plată eșalonată către vânzător acolo unde e cazul, și continuăm dezvoltarea afacerii cu experiența noastră de operatori.</span><span lang="en">For founders looking for a successor: we acquire and operate Romanian industrial SMEs, with a gradual transition that keeps the team, the customers and the know-how. We structure the deal together with the founder, including seller financing where it fits, and keep growing the business with our operating experience.</span></p></div>
+  </div>
+</div></section>
+
+<div class="wrap" aria-hidden="true"><div class="rule" style="--a:110deg;--w:7px;--g:15px;--fade:50%"></div></div>
+<section class="inv" id="investitori"><div class="wrap">
+  <div class="eyebrow"><span lang="ro">Pentru fonduri de investiții</span><span lang="en">For investment funds</span></div>
+  <h2><span lang="ro">Operatori pentru companiile din portofoliul vostru</span><span lang="en">Operators for your portfolio companies</span></h2>
+  <p class="lede"><span lang="ro">Lucrăm cu fonduri de private equity și venture capital care au nevoie de sprijin operațional în companii din industrie, energie și tehnologii verzi din România și CEE. Știm cum gândește un investitor, pentru că am fost și de partea lui: în consilii de administrație, în relația cu creditorii și ca business angels.</span><span lang="en">We work with private equity and venture capital funds that need operational support in industrial, energy and cleantech portfolio companies in Romania and CEE. We know how investors think, because we have been on their side too: on boards, in lender relationships and as business angels.</span></p>
+  <div class="sub inv-sub"><span lang="ro">Pe tot parcursul investiției</span><span lang="en">Across the investment cycle</span></div>
+  <ol class="inv-steps"><li><span class="inv-n">01</span><h3><span lang="ro">Înainte de tranzacție</span><span lang="en">Before the deal</span></h3><p><span lang="ro">Due diligence operațional și tehnic: fabrică, lanț de aprovizionare, produs, echipă.</span><span lang="en">Operational and technical due diligence: plant, supply chain, product, team.</span></p></li><li><span class="inv-n">02</span><h3><span lang="ro">Primele 100 de zile</span><span lang="en">The first 100 days</span></h3><p><span lang="ro">Plan de acțiune, KPI-uri și raportare către board, puse în practică împreună cu managementul.</span><span lang="en">Action plan, KPIs and board reporting, put in place together with management.</span></p></li><li><span class="inv-n">03</span><h3><span lang="ro">Crearea de valoare</span><span lang="en">Value creation</span></h3><p><span lang="ro">Capacitate de producție, piețe europene, digitalizare și finanțare complementară: granturi și datorie.</span><span lang="en">Production capacity, European markets, digitalisation and complementary financing: grants and debt.</span></p></li><li><span class="inv-n">04</span><h3><span lang="ro">Când planul nu merge</span><span lang="en">When the plan is off track</span></h3><p><span lang="ro">Turnaround, management interimar și relația cu băncile finanțatoare.</span><span lang="en">Turnaround, interim management and relationships with lending banks.</span></p></li><li><span class="inv-n">05</span><h3><span lang="ro">Achiziții ulterioare</span><span lang="en">Add-on acquisitions</span></h3><p><span lang="ro">Buy-and-build: identificarea țintelor și integrarea companiilor achiziționate.</span><span lang="en">Buy-and-build: finding targets and integrating the acquired companies.</span></p></li><li><span class="inv-n">06</span><h3><span lang="ro">Pregătirea exitului</span><span lang="en">Exit readiness</span></h3><p><span lang="ro">Date, procese și equity story pregătite pentru următorul investitor.</span><span lang="en">Data, processes and an equity story ready for the next investor.</span></p></li></ol>
+  <div class="inv-grid">
+    <div>
+      <div class="sub inv-sub"><span lang="ro">Cum putem lucra</span><span lang="en">How we can work</span></div>
+      <div class="inv-formats"><div><h3><span lang="ro">Operating partner</span><span lang="en">Operating partner</span></h3><p><span lang="ro">Mandat pe termen lung, implicare la nivel de board și câteva zile pe lună în companie.</span><span lang="en">A long-term mandate, board-level involvement and a few days a month in the company.</span></p></div><div><h3><span lang="ro">Management interimar</span><span lang="en">Interim management</span></h3><p><span lang="ro">COO, CFO sau CPO interimar pentru 6–12 luni, până la stabilizare sau până vine echipa permanentă.</span><span lang="en">Interim COO, CFO or CPO for 6–12 months, until things stabilise or the permanent team arrives.</span></p></div><div><h3><span lang="ro">Sprint de diagnostic</span><span lang="en">Diagnostic sprint</span></h3><p><span lang="ro">3–4 săptămâni de due diligence sau evaluare operațională, încheiate cu un raport de priorități.</span><span lang="en">3–4 weeks of due diligence or operational review, ending with a priorities report.</span></p></div></div>
+      <p class="inv-report"><span lang="ro">Raportăm în formatul vostru: KPI-uri lunare, materiale pentru board și pentru investitorii fondului, plus date ESG și de decarbonizare.</span><span lang="en">We report in your format: monthly KPIs, materials for the board and the fund’s investors, plus ESG and decarbonisation data.</span></p>
+    </div>
+    <aside class="inv-market">
+      <b>€347,5M</b>
+      <p><span lang="ro">din PNRR au fost alocate către 20 de fonduri noi de VC, PE și infrastructură active în România, majoritatea la începutul perioadei de investiții. Companiile lor vor avea nevoie de operatori locali în anii următori.</span><span lang="en">from Romania’s recovery plan have gone to 20 new VC, PE and infrastructure funds active in Romania, most of them early in their investment period. Their portfolio companies will need local operators in the coming years.</span></p>
+      <p><span lang="ro">Pentru fondurile din Scandinavia, Olanda sau UK care investesc în România fără o echipă locală, suntem echipa de la fața locului.</span><span lang="en">For funds from Scandinavia, the Netherlands or the UK investing in Romania without a local team, we are the team on the ground.</span></p>
+      <a class="src" href="https://www.romania-insider.com/romania-pnrr-venture-private-equity-funds-2026" target="_blank" rel="noopener"><span lang="ro">Sursa: Romania Insider</span><span lang="en">Source: Romania Insider</span> ↗</a>
+    </aside>
+  </div>
+</div></section>
+
+<section class="cases" style="padding-top:8px"><div class="wrap">
+  <div class="cases-head">
+    <div>
+      <div class="eyebrow"><span lang="ro">Studii de caz</span><span lang="en">Case studies</span></div>
+      <h2><span lang="ro">Ce am construit deja</span><span lang="en">What we have already built</span></h2>
+    </div>
+    <div class="case-nav">
+      <button type="button" id="case-prev" aria-label="Previous">←</button>
+      <button type="button" id="case-next" aria-label="Next">→</button>
+    </div>
+  </div>
+  <div class="case-track" id="case-track" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Case studies">
+    <article class="case" aria-roledescription="slide" aria-label="1 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Growth</span><span class="case-n">01</span></div>
+      <h3><span lang="ro">O fabrică pornită de la zero în 9 luni</span><span lang="en">A plant built from scratch in 9 months</span></h3>
+      <p class="case-ctx"><span lang="ro">Un producător britanic de module termice pentru rețele de termoficare avea nevoie de producție proprie în Europa de Est.</span><span lang="en">A UK maker of heat interface units for district heating networks needed its own production in Eastern Europe.</span></p>
+      <ul lang="ro"><li>Hală, echipamente, furnizori și echipă, puse pe picioare în 9 luni</li><li>Integrarea ingineriei, producției și a produselor conectate IoT</li><li>Livrare continuă pentru proiecte mari din UK, cu capital de lucru limitat</li></ul><ul lang="en"><li>Facility, equipment, suppliers and team set up in 9 months</li><li>Engineering, manufacturing and IoT-connected products run as one system</li><li>Continuous delivery to large UK projects under tight working capital</li></ul>
+      <div class="case-res"><b>15.000+</b><span><span lang="ro">unități livrate</span><span lang="en">units delivered</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="2 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Transition</span><span class="case-n">02</span></div>
+      <h3><span lang="ro">Turnaround sub supravegherea creditorilor</span><span lang="en">A turnaround under lender oversight</span></h3>
+      <p class="case-ctx"><span lang="ro">Un grup industrial cu activități în UK și România trecea printr-o perioadă de stres financiar și complexitate operațională.</span><span lang="en">An industrial group operating in the UK and Romania was going through financial stress and operational complexity.</span></p>
+      <ul lang="ro"><li>Planificare financiară, cash flow și optimizarea capitalului de lucru</li><li>Program de restructurare care a refăcut încrederea creditorilor</li><li>Narațiune pentru investitori și equity story pentru runde viitoare</li></ul><ul lang="en"><li>Financial planning, cash flow and working capital optimisation</li><li>A restructuring programme that restored lender confidence</li><li>Investor narrative and equity story for future rounds</li></ul>
+      <div class="case-res"><b>£1.5M+</b><span><span lang="ro">facilități de finanțare extinse</span><span lang="en">in expanded funding facilities</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="3 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Transition</span><span class="case-n">03</span></div>
+      <h3><span lang="ro">Fuziune și investiție dintr-un fond de tranziție energetică</span><span lang="en">A merger and an energy transition fund investment</span></h3>
+      <p class="case-ctx"><span lang="ro">Compania se pregătea pentru o fuziune și pentru intrarea unui investitor instituțional, cu ambiția de a trece de la hardware la servicii.</span><span lang="en">The company was preparing for a merger and an institutional investor, aiming to move from hardware to services.</span></p>
+      <ul lang="ro"><li>Plan de afaceri și modelare financiară pentru fuziune și investiție</li><li>Structurarea unui model de business energy-as-a-service</li><li>Platformă IoT pentru monitorizarea la distanță a rețelelor termice</li></ul><ul lang="en"><li>Business plan and financial modelling for the merger and the investment</li><li>Structuring an energy-as-a-service business model</li><li>IoT platform for remote monitoring of heat networks</li></ul>
+      <div class="case-res"><b>M&amp;A</b><span><span lang="ro">fuziune + investiție VC</span><span lang="en">merger + VC investment</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="4 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Growth</span><span class="case-n">04</span></div>
+      <h3><span lang="ro">Internalizarea producției cu finanțare nerambursabilă</span><span lang="en">Bringing production in-house with grant funding</span></h3>
+      <p class="case-ctx"><span lang="ro">Producătorul din Brașov avea nevoie de capacități proprii de producție, ca să depindă mai puțin de terți.</span><span lang="en">The Brașov manufacturer needed its own in-house manufacturing capabilities, to rely less on third parties.</span></p>
+      <ul lang="ro"><li>Conceptul proiectului, cererea de finanțare și contractarea</li><li>Implementarea programului de capex până la finalizare, în 2024</li><li>Grant de circa 60% din valoarea investiției, prin Granturile SEE și Norvegiene</li></ul><ul lang="en"><li>Project concept, funding application and contracting</li><li>Delivering the capex programme through to completion in 2024</li><li>A grant of about 60% of the investment, through EEA and Norway Grants</li></ul>
+      <div class="case-res"><b>€780k</b><span><span lang="ro">grant nerambursabil</span><span lang="en">non-repayable grant</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="5 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Growth</span><span class="case-n">05</span></div>
+      <h3><span lang="ro">Creștere și listare pentru un producător industrial românesc</span><span lang="en">Growth and a listing for a Romanian manufacturer</span></h3>
+      <p class="case-ctx"><span lang="ro">Un producător de radiatoare din Brașov avea nevoie de un nou model de business și de acces la capital.</span><span lang="en">A Brașov radiator manufacturer needed a new business model and access to capital.</span></p>
+      <ul lang="ro"><li>Repoziționare strategică, parteneriate internaționale și produse noi</li><li>Cifra de afaceri crescută de la ~2,5 la ~8 mil. €</li><li>Listarea pe AeRO (BVB) și un grant de 560.000 € pentru o investiție de 1,1 mil. €</li></ul><ul lang="en"><li>Strategic repositioning, international partnerships and new products</li><li>Revenue grown from ~€2.5M to ~€8M</li><li>A listing on AeRO (Bucharest Stock Exchange) and a €560k grant for a €1.1M investment</li></ul>
+      <div class="case-res"><b>×3</b><span><span lang="ro">cifra de afaceri, plus listare la bursă</span><span lang="en">revenue, plus a stock market listing</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="6 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Transition</span><span class="case-n">06</span></div>
+      <h3><span lang="ro">Guvernanță corporativă într-un portofoliu mare</span><span lang="en">Corporate governance across a large portfolio</span></h3>
+      <p class="case-ctx"><span lang="ro">Un fond de investiții listat la BVB deținea participații în peste 100 de companii românești.</span><span lang="en">An investment fund listed on the Bucharest Stock Exchange held stakes in over 100 Romanian companies.</span></p>
+      <ul lang="ro"><li>Implementarea principiilor de guvernanță corporativă în portofoliu</li><li>Reprezentare în litigii și negocieri</li><li>Mandate în consiliile de administrație ale unor companii industriale</li></ul><ul lang="en"><li>Implementing corporate governance principles across the portfolio</li><li>Representation in litigation and negotiations</li><li>Board seats at industrial companies</li></ul>
+      <div class="case-res"><b>100+</b><span><span lang="ro">companii în portofoliu</span><span lang="en">portfolio companies</span></span></div>
+    </article>
+    <article class="case" aria-roledescription="slide" aria-label="7 / 7">
+      <div class="case-top"><span class="case-tag">Zebra Transition</span><span class="case-n">07</span></div>
+      <h3><span lang="ro">O funcție financiară comună pentru un grup internațional</span><span lang="en">A shared finance function for an international group</span></h3>
+      <p class="case-ctx"><span lang="ro">Un grup cu entități în România și UK avea nevoie de control financiar fără să încetinească vânzările.</span><span lang="en">A group with entities in Romania and the UK needed financial control without slowing down sales.</span></p>
+      <ul lang="ro"><li>Raportare, trezorerie, buget, pricing și managementul riscului valutar</li><li>Relația cu băncile finanțatoare</li><li>Serviciu financiar centralizat pentru toate companiile grupului</li></ul><ul lang="en"><li>Reporting, treasury, budgeting, pricing and FX risk management</li><li>Relationships with lending banks</li><li>A centralised finance service for every company in the group</li></ul>
+      <div class="case-res"><b>1</b><span><span lang="ro">serviciu financiar pentru tot grupul</span><span lang="en">finance hub for the whole group</span></span></div>
+    </article>
+  </div>
+  <p class="disclaimer"><span lang="ro">Proiecte din experiența membrilor echipei, anterioare Zebra. Numele companiilor sunt omise.</span><span lang="en">Projects from the team members' experience, before Zebra. Company names are omitted.</span></p>
+</div></section>
+
+<div class="wrap" aria-hidden="true"><div class="rule" style="--a:96deg;--w:3px;--g:8px;--fade:30%"></div></div>
+<section style="padding-top:8px"><div class="wrap">
+  <div class="eyebrow"><span lang="ro">Echipa</span><span lang="en">The team</span></div>
+  <h2><span lang="ro">Operațiuni industriale, finanțe, banking și drept corporativ</span><span lang="en">Industrial operations, finance, banking and corporate law</span></h2>
+  <svg class="herd" viewBox="0 0 1200 56" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="h1" d="M0 6 C 380 6, 560 26, 820 26 L1200 26"/><path class="h2" d="M0 28 C 380 28, 560 28, 820 28 L1200 28"/><path class="h3" d="M0 50 C 380 50, 560 30, 820 30 L1200 30"/></svg>
+  <p class="herd-cap"><span lang="ro">Trei parcursuri diferite, care merg în aceeași direcție. Ca zebrele, lucrăm în grup: fiecare cu dungile lui, împreună mai puternici.</span><span lang="en">Three different paths heading the same way. Like zebras, we work as a herd: each with our own stripes, stronger together.</span></p>
+  <div class="team">
+
+    <article class="person">
+      <div class="intro">
+      <div>
+        <div class="avatar"><img src="photos/daniela-richea.jpg" alt="Daniela Richea" width="120" height="120"><canvas class="sig" data-seed="daniela-richea" width="112" height="112" aria-hidden="true"></canvas></div>
+        <h3>Daniela Richea, MSc</h3>
+        <div class="role"><span lang="ro">Co-fondator · Builder &amp; operator</span><span lang="en">Co-owner · Builder &amp; operator</span></div>
+      </div>
+      <p><span lang="ro">Construiește și scalează afaceri, legând strategia, operațiunile și finanțarea. A construit de la zero o operațiune de producție și inginerie cu peste 15.000 de unități livrate, a structurat peste 10 mil. € în granturi, datorie și equity și a condus programe de restructurare sub supravegherea creditorilor. Lucrează la intersecția dintre industrie, hardware și tehnologie: a condus trecerea către produse conectate IoT, gestionate printr-o platformă digitală proprie, și a lucrat la un model de business energy-as-a-service. Este angel investor în BRAVVA Angels, cu focus pe cleantech, deeptech și industrie.</span><span lang="en">Builds and scales businesses, connecting strategy, operations and finance. She built a manufacturing and engineering operation from zero to 15,000+ units delivered, structured €10M+ in grants, debt and equity, and led turnaround programmes under lender oversight. She works where industry, hardware and technology meet: she led the move to IoT-connected products run on a proprietary digital platform, and worked on an energy-as-a-service business model. She is an angel investor with BRAVVA Angels, focused on cleantech, deeptech and industrial ventures.</span></p>
+      <ul class="tags">
+        <li><span lang="ro">Produs &amp; industrializare</span><span lang="en">Product &amp; industrialisation</span></li>
+        <li><span lang="ro">Producție &amp; lanț de aprovizionare</span><span lang="en">Manufacturing &amp; supply chain</span></li>
+        <li><span lang="ro">Finanțare: granturi, datorie, equity</span><span lang="en">Financing: grants, debt, equity</span></li>
+        <li><span lang="ro">Restructurare &amp; turnaround</span><span lang="en">Restructuring &amp; turnaround</span></li>
+        <li>M&amp;A</li>
+        <li>Angel investing</li>
+        <li><span lang="ro">Rețele termice &amp; IoT</span><span lang="en">Heat networks &amp; IoT</span></li>
+        <li><span lang="ro">Platforme digitale</span><span lang="en">Digital platforms</span></li>
+        <li>Energy-as-a-service</li>
+        <li>RO · EN · FR</li>
+      </ul>
+      <div class="net">
+        <div class="sub"><span lang="ro">Rețea internațională</span><span lang="en">International network</span></div>
+        <ul>
+          <li><strong><span lang="ro">Danemarca</span><span lang="en">Denmark</span></strong><span lang="ro">Copenhagen Business School și alumni CEMS din toată Europa</span><span lang="en">Copenhagen Business School and CEMS alumni across Europe</span></li>
+          <li><strong><span lang="ro">Marea Britanie</span><span lang="en">United Kingdom</span></strong><span lang="ro">industria rețelelor termice și UK District Energy Association (UKDEA)</span><span lang="en">the heat network industry and the UK District Energy Association (UKDEA)</span></li>
+          <li><strong><span lang="ro">Capital</span><span lang="en">Capital</span></strong><span lang="ro">investitori, fonduri de venture și finanțatori din Scandinavia, Olanda, Marea Britanie și România</span><span lang="en">investors, venture funds and funders in Scandinavia, the Netherlands, the UK and Romania</span></li>
+          <li><strong>Supply chain</strong><span lang="ro">furnizori europeni și internaționali de componente și tehnologie, cu care a lucrat direct</span><span lang="en">European and international component and technology suppliers she has worked with directly</span></li>
+        </ul>
+      </div>
+      </div>
+      <ul class="ledger">
+        <li><time><span lang="ro">2022 – prezent</span><span lang="en">2022 – present</span></time><div><strong>Zebra Capital &amp; Advisory</strong><span class="d"><span lang="ro">Co-fondator. Proiecte de creștere, transformare și investiții în industrie, cleantech și climate tech.</span><span lang="en">Co-owner. Growth, transformation and investment projects in industry, cleantech and climate tech.</span></span></div></li>
+        <li><time><span lang="ro">În prezent</span><span lang="en">Current</span></time><div><strong>BRAVVA Angels</strong><span class="d"><span lang="ro">Business angel în rețeaua BRAVVA, cu focus pe cleantech, deeptech și industrie. Aduce perspectiva unui operator: cum va construi, livra și scala afacerea în practică. Investiții în portofoliu: Solmag, Watergenics.</span><span lang="en">Business angel in the BRAVVA network, focused on cleantech, deeptech and industrial ventures, bringing an operator's view of how a business will build, deliver and scale in practice. Portfolio: Solmag, Watergenics.</span></span></div></li>
+        <li><time>2018 – 2026</time><div><strong>Evinox Energy (UK)</strong><span class="d"><span lang="ro">Chief Product Officer (2025), cu responsabilitate de board pentru produs, inginerie în UK, producție în România și supply chain. A condus trecerea către o platformă IoT pentru monitorizarea și controlul la distanță al rețelelor termice, pe bază de date. Înainte, COO/CFO (2023–2025): restructurare și turnaround, peste 1,5 mil. £ în facilități de finanțare, modelare financiară pentru fuziunea cu Minibems și investiția SET Ventures, plus structurarea unui model de business energy-as-a-service pe baza fuziunii. Director Business Development și Head of Product Supply Chain (2018–2023).</span><span lang="en">Chief Product Officer (2025), owning product, UK engineering, Romanian manufacturing and supply chain at board level. Led the shift to an IoT platform for data-driven remote monitoring and control of heat networks. Before that, COO/CFO (2023–2025): restructuring and turnaround, £1.5M+ in expanded funding facilities, financial modelling for the Minibems merger and the SET Ventures investment, and work on an energy-as-a-service business model built on the merger. Director of Business Development and Head of Product Supply Chain (2018–2023).</span></span></div></li>
+        <li><time><span lang="ro">2019 – prezent</span><span lang="en">2019 – present</span></time><div><strong>Evinox Technology HUB, Brașov</strong><span class="d"><span lang="ro">Fondator și director general. A pus pe picioare producția în 9 luni (hală, echipamente, furnizori, echipă) și a livrat peste 15.000 de unități pentru rețele termice mari din UK. Program de capex de 1,5 mil. €, inclusiv un grant de 780.000 €.</span><span lang="en">Founder and Managing Director. Built full production capability in 9 months (facility, equipment, suppliers, team) and delivered 15,000+ units to large UK heat network projects. €1.5M capex programme, including a €780k grant.</span></span></div></li>
+        <li><time>2009 – 2018</time><div><strong>Romradiatoare Brașov</strong><span class="d"><span lang="ro">Director General Adjunct (2016–2018): creșterea cifrei de afaceri de la ~2,5 la ~8 mil. € și listarea pe AeRO la Bursa de Valori București. Grant Innovation Norway de 560.000 € pentru o investiție de 1,1 mil. €. Anterior, director de business development și consultant al Consiliului de Administrație.</span><span lang="en">Deputy Director General (2016–2018): revenue growth from ~€2.5M to ~€8M and listing on the Bucharest Stock Exchange's AeRO market. €560k Innovation Norway grant for a €1.1M investment. Previously Director of Business Development and consultant to the Board.</span></span></div></li>
+        <li><time>2010 – 2014</time><div><strong><span lang="ro">Alte mandate de management</span><span lang="en">Other management roles</span></strong><span class="d"><span lang="ro">Membru în comitetul interimar de management, Spitalul Sf. Constantin Brașov · Consultant de business development, grupul Doripesco</span><span lang="en">Interim Management Committee member, Sf. Constantin Hospital, Brașov · Business development consultant, Doripesco group</span></span></div></li>
+        <li><time><span lang="ro">Studii</span><span lang="en">Education</span></time><div><strong>MSc, Copenhagen Business School · CEMS MIM</strong><span class="d"><span lang="ro">Master în Management Internațional (CEMS, Rotterdam School of Management) · Management of Innovation and Business Development (CBS) · Strategic Growth Management (BISM, 2025)</span><span lang="en">Master in International Management (CEMS, Rotterdam School of Management) · Management of Innovation and Business Development (CBS) · Strategic Growth Management (BISM, 2025)</span></span></div></li>
+      </ul>
+    </article>
+
+    <article class="person">
+      <div class="intro">
+      <div>
+        <div class="avatar"><img src="photos/mihai-ciprian-iftime.jpg" alt="Mihai-Ciprian Iftime" width="120" height="120"><canvas class="sig" data-seed="mihai-ciprian-iftime" width="112" height="112" aria-hidden="true"></canvas></div>
+        <h3>Mihai-Ciprian Iftime</h3>
+        <div class="role"><span lang="ro">Drept, guvernanță &amp; administrare</span><span lang="en">Legal, governance &amp; administration</span></div>
+      </div>
+      <p><span lang="ro">Jurist cu peste 20 de ani de experiență în guvernanță corporativă, litigii și negocieri, câștigată la unul dintre cele mai mari fonduri de investiții listate din România. Din 2018 conduce partea financiară, administrativă și de resurse umane a unui producător industrial din Brașov.</span><span lang="en">Lawyer with over 20 years' experience in corporate governance, litigation and negotiation, built at one of Romania's largest listed investment funds. Since 2018 he has run finance, administration and HR for an industrial manufacturer in Brașov.</span></p>
+      <ul class="tags">
+        <li><span lang="ro">Guvernanță corporativă</span><span lang="en">Corporate governance</span></li>
+        <li><span lang="ro">Juridic &amp; negocieri</span><span lang="en">Legal &amp; negotiation</span></li>
+        <li><span lang="ro">Finanțe &amp; HR</span><span lang="en">Finance &amp; HR</span></li>
+        <li><span lang="ro">Consilii de administrație</span><span lang="en">Board roles</span></li>
+        <li>RO · EN</li>
+      </ul>
+      </div>
+      <ul class="ledger">
+        <li><time><span lang="ro">2026 – prezent</span><span lang="en">2026 – present</span></time><div><strong><span lang="ro">Consilii de administrație</span><span lang="en">Board positions</span></strong><span class="d"><span lang="ro">Membru CA, Arsenal Reșița S.A. (din februarie 2026) · Membru CA, Societatea Națională de Radiocomunicații RADIOCOM S.A. (februarie–octombrie 2026)</span><span lang="en">Board member, Arsenal Reșița S.A. (since February 2026) · Board member, RADIOCOM S.A., the national radiocommunications company (February–October 2026)</span></span></div></li>
+        <li><time><span lang="ro">2018 – prezent</span><span lang="en">2018 – present</span></time><div><strong>Evinox Technology HUB, Brașov</strong><span class="d"><span lang="ro">Administrator. Producător de module termice automatizate, cifră de afaceri de 4,5–5 mil. € pe an. A contribuit la înființarea fabricii (2021) și la un proiect de investiții de 1,3 mil. €, finalizat în 2024, cu 60% finanțare nerambursabilă Innovation Norway.</span><span lang="en">Administrator. Manufacturer of automated heat interface units, €4.5–5M annual turnover. Helped set up the production site (2021) and deliver a €1.3M investment project, completed in 2024 with 60% grant funding from Innovation Norway.</span></span></div></li>
+        <li><time><span lang="ro">2019 – prezent</span><span lang="en">2019 – present</span></time><div><strong>Ecobrichete Paie pe Foc, Brașov</strong><span class="d"><span lang="ro">Administrator și asociat. Producție de combustibil ecologic din reziduuri vegetale.</span><span lang="en">Administrator and shareholder. Produces eco-friendly fuel briquettes from plant residues.</span></span></div></li>
+        <li><time>2004 – 2020</time><div><strong>SIF Transilvania <span lang="ro">(azi Transilvania Investment Alliance)</span><span lang="en">(now Transilvania Investment Alliance)</span></strong><span class="d"><span lang="ro">Consilier juridic la fondul închis listat la BVB, cu participații în peste 100 de companii. A implementat guvernanța corporativă în portofoliu și a reprezentat societatea în litigii și negocieri.</span><span lang="en">Legal counsel at the BVB-listed closed-end fund holding stakes in over 100 companies. Implemented corporate governance across the portfolio and represented the fund in litigation and negotiations.</span></span></div></li>
+        <li><time>2006 – 2020</time><div><strong><span lang="ro">Consilii de administrație</span><span lang="en">Board positions</span></strong><span class="d">Neptun-Olimp S.A. · SIMEC S.A. Sibiu · Terracotta Star S.A. <span lang="ro">(administrator)</span><span lang="en">(administrator)</span> · Ialpesco S.A.</span></div></li>
+        <li><time><span lang="ro">Studii</span><span lang="en">Education</span></time><div><strong><span lang="ro">Drept, Universitatea Transilvania din Brașov</span><span lang="en">Law, Transilvania University of Brașov</span></strong><span class="d"><span lang="ro">Licență în Drept; master în Drept penal al afacerilor</span><span lang="en">Law degree; master's in business criminal law</span></span></div></li>
+      </ul>
+    </article>
+
+    <article class="person">
+      <div class="intro">
+      <div>
+        <div class="avatar"><img src="photos/laurentiu-loboda.jpg" alt="Laurențiu Lobodă" width="120" height="120"><canvas class="sig" data-seed="laurentiu-loboda" width="112" height="112" aria-hidden="true"></canvas></div>
+        <h3>Laurențiu Lobodă</h3>
+        <div class="role"><span lang="ro">Finanțe, banking &amp; strategie comercială</span><span lang="en">Finance, banking &amp; commercial strategy</span></div>
+      </div>
+      <p><span lang="ro">Combină dreptul cu peste 20 de ani în banking, în mare parte ca director de sucursală, cu responsabilitate pentru decizii de creditare, P&amp;L și echipe. Consiliază companii în finanțarea creșterii, de la credite bancare la capital de la investitori, în protejarea afacerii prin contracte și verificarea partenerilor, în acoperirea riscului valutar și de preț și în pregătirea discuțiilor cu investitorii.</span><span lang="en">Combines law with 20+ years in banking, mostly as a branch manager responsible for credit decisions, P&amp;L and teams. He advises companies on financing growth, from bank loans to investor capital, on protecting the business through sound contracts and counterparty checks, on hedging currency and price exposure, and on preparing for investor discussions.</span></p>
+      <ul class="tags">
+        <li><span lang="ro">Finanțarea creșterii</span><span lang="en">Growth financing</span></li>
+        <li><span lang="ro">Relația cu băncile</span><span lang="en">Bank relationships</span></li>
+        <li><span lang="ro">Risc valutar &amp; de preț</span><span lang="en">FX &amp; price risk</span></li>
+        <li><span lang="ro">Contracte &amp; due diligence</span><span lang="en">Contracts &amp; due diligence</span></li>
+        <li><span lang="ro">Strategie comercială</span><span lang="en">Commercial strategy</span></li>
+        <li>RO · EN · FR · IT</li>
+      </ul>
+      </div>
+      <ul class="ledger">
+        <li><time><span lang="ro">2025 – prezent</span><span lang="en">2025 – present</span></time><div><strong><span lang="ro">Consultant independent</span><span lang="en">Independent advisor</span></strong><span class="d"><span lang="ro">Strategie financiară și comercială: structurarea finanțării, renegocierea contractelor cu clienți și furnizori, linii de venit complementare.</span><span lang="en">Financial and commercial strategy: structuring financing, renegotiating customer and supplier terms, complementary revenue lines.</span></span></div></li>
+        <li><time>2025 – 2026</time><div><strong>Evinox Technology HUB, Brașov</strong><span class="d"><span lang="ro">HUB Finance &amp; Development Director. A condus întreaga funcție financiară (raportare, trezorerie, relația cu băncile finanțatoare, buget, pricing, risc valutar), a creat un serviciu financiar centralizat pentru tot grupul, inclusiv entitatea din UK, și a deschis piețe noi.</span><span lang="en">HUB Finance &amp; Development Director. Ran the full finance function (reporting, treasury, lending bank relationships, budgeting, pricing, FX risk), built a shared finance service for the whole group including the UK entity, and opened new markets.</span></span></div></li>
+        <li><time>2004 – 2025</time><div><strong>OTP Bank · UniCredit · Crédit Agricole · Piraeus · Intesa Sanpaolo</strong><span class="d"><span lang="ro">Director de sucursală în Brașov: aprobarea dosarelor de credit, vânzări Retail, IMM și Corporate, buget și P&amp;L, KYC și anti-spălarea banilor. La UniCredit și Relationship Manager pentru clienți business Prime.</span><span lang="en">Branch manager in Brașov: credit approvals, Retail, SME and Corporate sales, budgeting and P&amp;L, KYC and anti-money laundering. At UniCredit also Relationship Manager for Prime business clients.</span></span></div></li>
+        <li><time><span lang="ro">2026 – prezent</span><span lang="en">2026 – present</span></time><div><strong>ORCA Smash, Brașov</strong><span class="d"><span lang="ro">Co-fondator al unui spațiu de experiențe: concept, finanțare, lansare și operare.</span><span lang="en">Co-founder of an experience venue: concept, financing, launch and operations.</span></span></div></li>
+        <li><time><span lang="ro">Studii</span><span lang="en">Education</span></time><div><strong><span lang="ro">Drept, Universitatea din Craiova</span><span lang="en">Law, University of Craiova</span></strong></div></li>
+      </ul>
+    </article>
+
+  </div>
+</div></section>
+
+<div class="wrap" aria-hidden="true"><div class="rule" style="--a:118deg;--w:9px;--g:20px;--fade:70%"></div></div>
+<section id="radar" class="radar"><div class="wrap">
+  <div class="radar-head">
+    <div>
+      <div class="eyebrow"><span lang="ro">Radar Zebra</span><span lang="en">Zebra Radar</span></div>
+      <h2><span lang="ro">Ecosistemul de capital pentru creștere, în România, CEE și Europa</span><span lang="en">The growth capital ecosystem in Romania, CEE and Europe</span></h2>
+      <p class="lede"><span lang="ro">Surse de finanțare publice, investitori activi, știri relevante și exemple de zebre de succes. Actualizat la fiecare două săptămâni.</span><span lang="en">Public funding sources, active investors, relevant news and examples of successful zebras. Updated every two weeks.</span></p>
+    </div>
+    <div class="stamp" id="radar-stamp" aria-live="polite"></div>
+  </div>
+  <div class="tabs" role="tablist" aria-label="Radar">
+    <button type="button" role="tab" id="tab-funding" data-tab="funding" aria-selected="true"><span lang="ro">Finanțare publică</span><span lang="en">Public funding</span></button>
+    <button type="button" role="tab" id="tab-players" data-tab="players" aria-selected="false"><span lang="ro">Investitori</span><span lang="en">Investors</span></button>
+    <button type="button" role="tab" id="tab-news" data-tab="news" aria-selected="false"><span lang="ro">Știri</span><span lang="en">News</span></button>
+    <button type="button" role="tab" id="tab-zebras" data-tab="zebras" aria-selected="false"><span lang="ro">Zebre de succes</span><span lang="en">Successful zebras</span></button>
+  </div>
+  <div id="radar-body" class="radar-body" role="tabpanel">
+    <p class="empty"><span lang="ro">Radarul se încarcă. Dacă nu apare nimic, ediția curentă nu a fost încă publicată.</span><span lang="en">The radar is loading. If nothing appears, the current edition has not been published yet.</span></p>
+  </div>
+  <p class="disclaimer"><span lang="ro">Informații orientative, cu link către sursă. Verificați condițiile și termenele direct la finanțator.</span><span lang="en">Indicative information with a link to each source. Check terms and deadlines directly with the funder.</span></p>
+</div></section>
+
+<div class="wrap" aria-hidden="true"><div class="rule" style="--a:100deg;--w:5px;--g:12px;--fade:45%"></div></div>
+<section class="contact inverse" id="contact"><div class="wrap">
+  <div>
+    <div class="eyebrow">Contact</div>
+    <h2><span lang="ro">Hai să discutăm</span><span lang="en">Let’s talk</span></h2>
+  </div>
+  <div class="contact-body">
+    <p><span lang="ro">Fondatori: despre următoarea etapă a afacerii voastre.</span><span lang="en">Founders: about the next stage of your business.</span><br><span lang="ro">Fonduri de investiții: confidențial, despre o companie din portofoliu.</span><span lang="en">Investment funds: confidentially, about a portfolio company.</span></p>
+    <div class="mail-row">
+      <a class="mail" id="mail" href="mailto:contact@zebracapital.ro">contact@zebracapital.ro</a>
+      <button type="button" id="copy-mail" class="copy"><span lang="ro">Copiază adresa</span><span lang="en">Copy address</span></button>
+      <span id="copy-ok" class="copy-ok" role="status" aria-live="polite"></span>
+    </div>
+    <p class="contact-note">Zebra Capital and Advisory SRL · CUI 46245416 · J2022001671083 · Brașov, <span lang="ro">România</span><span lang="en">Romania</span></p>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <span class="brand" style="font-size:1rem"><svg class="logo" style="width:20px;height:20px" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path d="M5 6h30v6H5z" fill="currentColor"/><path d="M35 12 13 28H5l22-16z" fill="var(--accent)"/><path d="M5 28h30v6H5z" fill="currentColor"/></svg><span>Zebra Capital &amp; Advisory · <span lang="ro">România</span><span lang="en">Romania</span></span></span>
+  <span lang="ro">Cleantech · Industrie · M&amp;A · Succesiune</span><span lang="en">Cleantech · Industry · M&amp;A · Succession</span>
+</div></footer>
+</div>
+
+<script>
+(function(){
+  var site=document.getElementById('site');
+  function set(l){
+    site.setAttribute('data-lang',l);
+    document.documentElement.lang=l;
+    document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l));});
+    try{localStorage.setItem('zebra-lang',l);}catch(e){}
+  }
+  var saved=null; try{saved=localStorage.getItem('zebra-lang');}catch(e){}
+  var fromHash=location.hash.replace('#','');
+  set(fromHash==='en'||fromHash==='ro'?fromHash:(saved==='en'?'en':'ro'));
+  document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set);});});
+})();
+
+(function(){
+  var b=document.getElementById('copy-mail'),ok=document.getElementById('copy-ok'),m=document.getElementById('mail');
+  if(!b)return;
+  b.addEventListener('click',function(){
+    var lang=document.getElementById('site').getAttribute('data-lang');
+    function done(t){ok.textContent=t;setTimeout(function(){ok.textContent='';},2500);}
+    function sel(){try{var r=document.createRange();r.selectNodeContents(m);var g=getSelection();g.removeAllRanges();g.addRange(r);}catch(e){}done(lang==='en'?'Selected, press Ctrl+C':'Selectat, apasă Ctrl+C');}
+    try{navigator.clipboard.writeText(m.textContent).then(function(){done(lang==='en'?'Copied':'Copiat');},sel);}catch(e){sel();}
+  });
+})();
+
+(function(){
+  var t=document.getElementById('case-track'),pv=document.getElementById('case-prev'),nx=document.getElementById('case-next');
+  if(!t)return;
+  function step(){var c=t.querySelector('.case');return c?c.getBoundingClientRect().width+20:300;}
+  function upd(){pv.disabled=t.scrollLeft<=4;nx.disabled=t.scrollLeft+t.clientWidth>=t.scrollWidth-4;}
+  pv.addEventListener('click',function(){t.scrollBy({left:-step()});});
+  nx.addEventListener('click',function(){t.scrollBy({left:step()});});
+  t.addEventListener('keydown',function(ev){if(ev.key==='ArrowRight'){t.scrollBy({left:step()});ev.preventDefault();}if(ev.key==='ArrowLeft'){t.scrollBy({left:-step()});ev.preventDefault();}});
+  t.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+})();
+
+(function(){
+  function rng(str){var h=2166136261;for(var i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619);}return function(){h+=0x6D2B79F5;var t=h;t=Math.imul(t^t>>>15,t|1);t^=t+Math.imul(t^t>>>7,t|61);return((t^t>>>14)>>>0)/4294967296;};}
+  function draw(){
+    var cs=getComputedStyle(document.documentElement), ink=cs.getPropertyValue('--ink').trim()||'#121614', acc=cs.getPropertyValue('--accent').trim()||'#0f6b55';
+    document.querySelectorAll('canvas.sig').forEach(function(c){
+      var r=rng(c.dataset.seed||'z'), x=c.getContext('2d'), W=c.width, H=c.height; x.clearRect(0,0,W,H);
+      var ang=(0.35+r()*0.5), pos=-H, k=0, accentAt=Math.floor(r()*6)+2;
+      while(pos<W+H){
+        var w=4+r()*12, gap=5+r()*12, amp=3+r()*7, fr=0.02+r()*0.03, ph=r()*6.28;
+        x.beginPath();
+        for(var y=0;y<=H;y+=4){var o=pos+y*ang+Math.sin(y*fr+ph)*amp; if(y===0)x.moveTo(o,y); else x.lineTo(o,y);}
+        for(var y2=H;y2>=0;y2-=4){var o2=pos+w+y2*ang+Math.sin(y2*fr+ph+0.6)*amp*0.8; x.lineTo(o2,y2);}
+        x.closePath(); x.fillStyle=(k===accentAt)?acc:ink; x.fill();
+        pos+=w+gap; k++;
+      }
+    });
+  }
+  draw();
+  try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',draw);}catch(e){}
+  try{new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});}catch(e){}
+})();
+
+(function(){
+  var body=document.getElementById('radar-body'), stamp=document.getElementById('radar-stamp');
+  var data=null, tab='funding';
+  var MRO=['ian.','feb.','mar.','apr.','mai','iun.','iul.','aug.','sep.','oct.','nov.','dec.'];
+  var MEN=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function bi(ro,en){return '<span lang="ro">'+esc(ro)+'</span><span lang="en">'+esc(en||ro)+'</span>';}
+  function d(iso){var p=String(iso||'').split('-');if(p.length<3)return bi(iso,iso);var m=+p[1]-1;return bi(+p[2]+' '+MRO[m]+' '+p[0], +p[2]+' '+MEN[m]+' '+p[0]);}
+  function link(name,url){return url&&/^https:\/\//.test(url)?'<a href="'+esc(url)+'" target="_blank" rel="noopener">'+name+'</a>':name;}
+  function row(meta,title,text,side){return '<div class="r-item"><div class="r-meta">'+meta+'</div><div><h3>'+title+'</h3><p>'+text+'</p></div><div>'+side+'</div></div>';}
+  var R={
+    funding:function(x){return row(esc(x.region),link(esc(x.name),x.url),bi(x.what_ro,x.what_en),'<div class="r-kind">'+bi(x.type_ro,x.type_en)+'</div><span class="r-status">'+bi(x.status_ro,x.status_en)+'</span>');},
+    players:function(x){return row(esc(x.country),link(esc(x.name),x.url),bi(x.note_ro,x.note_en),'<div class="r-kind">'+bi(x.kind_ro,x.kind_en)+'</div>');},
+    news:function(x){return row(d(x.date),link(bi(x.title_ro,x.title_en),x.url),bi(x.summary_ro,x.summary_en),'<div class="r-kind">'+esc(x.source)+'</div>');},
+    zebras:function(x){return row((x.date?d(x.date)+'<br>':'')+esc(x.country),link(esc(x.name),x.url),bi(x.note_ro,x.note_en),x.source?'<div class="r-kind">'+esc(x.source)+'</div>':'');}
+  };
+  function render(){
+    document.querySelectorAll('.tabs button').forEach(function(b){b.setAttribute('aria-selected',String(b.dataset.tab===tab));});
+    body.setAttribute('aria-labelledby','tab-'+tab);
+    if(!data)return;
+    var list=(data[tab]||[]).slice();
+    if(tab==='news'||tab==='zebras')list.sort(function(a,b){return String(b.date).localeCompare(String(a.date));});
+    body.innerHTML=list.length?list.map(R[tab]).join(''):'<p class="empty">'+bi('Nimic în această categorie în ediția curentă.','Nothing in this category in the current edition.')+'</p>';
+  }
+  document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){tab=b.dataset.tab;render();});});
+  fetch('radar.json',{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json();}).then(function(j){
+    data=j;
+    stamp.innerHTML=bi('Actualizat','Updated')+': <b>'+d(j.updated)+'</b>'+(j.next?'<br>'+bi('Următoarea ediție','Next edition')+': '+d(j.next):'');
+    render();
+  }).catch(function(){
+    body.innerHTML='<p class="empty">'+bi('Radarul nu a putut fi încărcat acum. Reîncărcați pagina mai târziu.','The radar could not be loaded right now. Reload the page later.')+'</p>';
+  });
+})();
+</script>
+
+</body>
+</html>
