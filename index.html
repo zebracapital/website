@@ -460,7 +460,7 @@ footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:spac
     <div>
       <div class="eyebrow"><span lang="ro">Radar Zebra</span><span lang="en">Zebra Radar</span></div>
       <h2><span lang="ro">Ecosistemul de capital pentru creștere, în România, CEE și Europa</span><span lang="en">The growth capital ecosystem in Romania, CEE and Europe</span></h2>
-      <p class="lede"><span lang="ro">Surse de finanțare publice, investitori activi, știri relevante și exemple de zebre de succes. Actualizat la fiecare două săptămâni.</span><span lang="en">Public funding sources, active investors, relevant news and examples of successful zebras. Updated every two weeks.</span></p>
+      <p class="lede"><span lang="ro">Surse de finanțare publice, investitori activi și știri relevante. Actualizat la fiecare două săptămâni.</span><span lang="en">Public funding sources, active investors and relevant news. Updated every two weeks.</span></p>
     </div>
     <div class="stamp" id="radar-stamp" aria-live="polite"></div>
   </div>
@@ -468,7 +468,8 @@ footer .wrap{padding-block:28px;display:flex;flex-wrap:wrap;justify-content:spac
     <button type="button" role="tab" id="tab-funding" data-tab="funding" aria-selected="true"><span lang="ro">Finanțare publică</span><span lang="en">Public funding</span></button>
     <button type="button" role="tab" id="tab-players" data-tab="players" aria-selected="false"><span lang="ro">Investitori</span><span lang="en">Investors</span></button>
     <button type="button" role="tab" id="tab-news" data-tab="news" aria-selected="false"><span lang="ro">Știri</span><span lang="en">News</span></button>
-    <button type="button" role="tab" id="tab-zebras" data-tab="zebras" aria-selected="false"><span lang="ro">Zebre de succes</span><span lang="en">Successful zebras</span></button>
+    <!-- PAUZĂ: tabul „Zebre de succes” e ascuns publicului până decide Daniela conținutul. Datele rămân în radar.json (cheia "zebras") și sunt actualizate în continuare. Pentru reactivare: șterge atributul hidden de pe butonul de mai jos. -->
+    <button type="button" role="tab" id="tab-zebras" data-tab="zebras" aria-selected="false" hidden><span lang="ro">Zebre de succes</span><span lang="en">Successful zebras</span></button>
   </div>
   <div id="radar-body" class="radar-body" role="tabpanel">
     <p class="empty"><span lang="ro">Radarul se încarcă. Dacă nu apare nimic, ediția curentă nu a fost încă publicată.</span><span lang="en">The radar is loading. If nothing appears, the current edition has not been published yet.</span></p>
